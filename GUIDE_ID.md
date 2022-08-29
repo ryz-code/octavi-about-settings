@@ -1,8 +1,5 @@
 # Guide Bahasa Indonesia
 
-Senin, 29 Agustus 2022
-
-
 Notes: untuk rom A10, A11 & A12
 langsung saja decompile Settings dan masukin bahan, ke folder 
 
