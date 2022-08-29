@@ -985,15 +985,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 89
-    sget v0, Lcom/android/settings/R$id;->board:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
     .line 90
     sget-object v1, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
