@@ -1,9 +1,4 @@
-# Guide Bahasa Indonesia
-
-Notes: untuk rom A10, A11 & A12
-langsung saja decompile Settings dan masukin bahan, ke folder 
-
-### 1. Tutorial
+###  Tutorial
 
 - tambah di colors (res/values):
 ```
@@ -65,10 +60,20 @@ ro.nad.build.version=Nusantara_LTS-10-ginkgo-29082021-OFFICIAL-2251
 ro.nad.hw.cam=48MP|8MP|2MP|2MP
 ro.nad.hw.cpu=Snapdragon 665 (11 nm)
 ro.nad.build.type=OFFICIAL
-
+Silahkan edit atau
 cocok kan dengan rom yg kalian pakai
-
-bisa juga kalian edit ke values/strings
 ```
+
+bisa juga kalian ubah pemanggilnya  ke values/strings
+
+- Before:
+```
+const-string v1, "ro.nad.maintainer"
+```
+- After:
+```
+const-string v1, "maintainer"
+```
+Lalu tambahkan nama pemanggil nya ke (values/strings)
 
 sekian dan terima kasih
