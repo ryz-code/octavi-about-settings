@@ -5,6 +5,8 @@
 <h4><p align="center"> OctaviOS -Settings -About </p></h4>
 
 
+# Guide :
+## [Guide Bahasa Indonesia](https://github.com/ryz-code/octavi-about-settings/GUIDE_ID.md)
 <h2 align="center">
       [CREDIT]
 </h2>
