@@ -6,7 +6,7 @@
 
 
 # Tutorial :
-## [Bahasa Indonesia](https://github.com/ryz-code/octavi-about-settings/GUIDE_ID.md) | [English](https://github.com/ryz-code/octavi-about-settings/GUIDE_EN.md)
+## [Bahasa Indonesia](https://github.com/ryz-code/octavi-about-settings/blob/master/GUIDE_ID.md) | [English](https://github.com/ryz-code/octavi-about-settings/blob/master/GUIDE_EN.md)
 <h2 align="center">
 
 <h2 align="center">
