@@ -3,6 +3,7 @@
 - tambah di colors (res/values):
 ```
     <color name="primary_bg">#fff4f4f4</color>
+    <color name="secondary_bg">@android:color/background_cache_hint_selector_device_default</color>
     <color name="acc3">@android:color/background_floating_device_default_light</color>
     <color name="text">@android:color/autofill_background_material_dark</color>
 ```
@@ -10,8 +11,8 @@
 - tambah di colors (res/values-night)
 ```
     <color name="primary_bg">#ff3f3f3f</color>
-    <color name="text">@android:color/Teal_800</color>
     <color name="secondary_bg">@android:color/autofill_background_material_dark</color>
+    <color name="text">@android:color/Teal_800</color>
 ```
 
 - tambah di id (res/values)
