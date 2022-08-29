@@ -75,5 +75,6 @@ const-string v1, "ro.nad.maintainer"
 const-string v1, "maintainer"
 ```
 Lalu tambahkan nama pemanggil nya ke (values/strings)
+Pasti paham lah ya!!!
 
 sekian dan terima kasih
