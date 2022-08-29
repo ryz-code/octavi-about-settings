@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/oos_about_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="20.0dip">
+                <ImageView android:id="@id/vic" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/verified" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="?android:textColorPrimary" android:id="@id/version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.1" />
+                <TextView android:textSize="20.0sp" android:textColor="?android:textColorSecondary" android:layout_gravity="bottom" android:id="@id/tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:text="LTS" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="20.0dip" app:cardBackgroundColor="@color/s_card" app:cardCornerRadius="20.0dip" app:cardElevation="0.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_weight="1.0">
+                        <TextView android:textSize="15.0sp" android:textStyle="bold" android:id="@id/model" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                        <RelativeLayout android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                            <ImageView android:id="@id/abt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/about" android:layout_centerInParent="true" />
+                            <TextView android:textColor="?android:textColorPrimary" android:id="@id/board" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:textAlignment="textStart" android:layout_marginStart="55.0dip" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="wrap_content">
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Security patch" />
+                            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/patch" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/a12" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="10.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="15.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="5.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="12.0dip" android:src="@drawable/android" />
+                                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Android 10" android:layout_marginStart="5.0dip" />
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="5.0dip" app:cardBackgroundColor="@color/s_card" app:cardCornerRadius="20.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                    <TextView android:textColor="@color/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="H/W Info" android:layout_marginStart="5.0dip" />
+                    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="35.0dip" android:layout_height="35.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/battery" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/battery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="35.0dip" android:layout_height="35.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/cam" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/cam" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="128" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="35.0dip" android:layout_height="35.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/res" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/res" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/buttonDown" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_marginHorizontal="10.0dip" app:cardBackgroundColor="@color/s_card" app:cardCornerRadius="20.0dip" app:cardElevation="0.0dip">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <TextView android:textColor="@color/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chip Info" android:layout_marginStart="5.0dip" android:layout_marginVertical="4.0dip" />
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="2.0dip">
+                                <com.google.android.material.card.MaterialCardView android:layout_width="45.0dip" android:layout_height="45.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                    <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/cpu" />
+                                </com.google.android.material.card.MaterialCardView>
+                                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                    <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/namecpu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Snapdragon 665" android:layout_marginStart="10.0dip" />
+                                    <TextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/cpu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="2.0dip">
+                                <com.google.android.material.card.MaterialCardView android:layout_width="45.0dip" android:layout_height="45.0dip" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                    <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/storage" />
+                                </com.google.android.material.card.MaterialCardView>
+                                <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/memory" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                    <com.google.android.material.card.MaterialCardView android:layout_gravity="center" android:id="@id/maincard" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="10.0dip" app:cardBackgroundColor="@color/s_card" app:cardCornerRadius="15.0dip" app:cardElevation="0.0dip">
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginVertical="5.0dip">
+                                <com.google.android.material.card.MaterialCardView android:layout_width="45.0dip" android:layout_height="wrap_content" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="5.0dip">
+                                    <ImageView android:layout_gravity="center" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/maintainer" />
+                                </com.google.android.material.card.MaterialCardView>
+                                <TextView android:textSize="14.0sp" android:textColor="@color/text" android:id="@id/maintainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sahrul Maulana" android:singleLine="true" android:layout_marginStart="10.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginBottom="20.0dip" app:cardBackgroundColor="@color/s_card" app:cardCornerRadius="20.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                <TextView android:textColor="@color/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Kernel Info" android:layout_marginStart="10.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="top" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/security" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Kernel Version" />
+                                <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/kernel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginHorizontal="20.0dip" app:cardElevation="0.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="top" android:layout_gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/security" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SELinux Status" />
+                                <TextView android:textSize="14.0sp" android:textColor="?android:textColorPrimary" android:id="@id/selinux" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginHorizontal="20.0dip" app:cardElevation="0.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                        <LinearLayout android:gravity="top" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip">
+                            <com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/monetkw" app:cardCornerRadius="30.0dip" app:cardElevation="0.0dip" app:contentPadding="10.0dip">
+                                <ImageView android:layout_gravity="center" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/baseband" />
+                            </com.google.android.material.card.MaterialCardView>
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                                <TextView android:textSize="16.0sp" android:textColor="@color/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Baseband Version" />
+                                <TextView android:textSize="12.0sp" android:textColor="?android:textColorPrimary" android:id="@id/baseband" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
