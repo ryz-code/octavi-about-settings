@@ -6,22 +6,24 @@ Senin, 29 Agustus 2022
 Notes: untuk rom A10, A11 & A12
 langsung saja decompile Settings dan masukin bahan, ke folder 
 
-tambah di colors (res/values)
-+++++++++++++++++++++
+### 1. Tutorial
+
+- tambah di colors (res/values):
+```
     <color name="primary_bg">#fff4f4f4</color>
     <color name="acc3">@android:color/background_floating_device_default_light</color>
     <color name="text">@android:color/autofill_background_material_dark</color>
-+++++++++++++++++++++
+```
 
-tambah di colors (res/values-night)
-+++++++++++++++++++++
+- tambah di colors (res/values-night)
+```
     <color name="primary_bg">#ff3f3f3f</color>
     <color name="text">@android:color/Teal_800</color>
     <color name="secondary_bg">@android:color/autofill_background_material_dark</color>
-+++++++++++++++++++++
+```
 
-tambah di id (res/values)
-+++++++++++++++++++++
+- tambah di id (res/values)
+```
     <item type="id" name="oos_about_root" />
     <item type="id" name="refresh" />
     <item type="id" name="vic" />
@@ -44,7 +46,8 @@ tambah di id (res/values)
     <item type="id" name="kernel" />
     <item type="id" name="selinux" />
     <item type="id" name="baseband" />
-+++++++++++++++++++++
+```
+
 Recompile Settings_src dan decompile untuk urusan smali (taulah YGY kenapa seperti itu)
 
 lanjut 
@@ -54,8 +57,8 @@ recompile
 sign
 push
 
-Catatan: (Harap Di Baca)
-+++++++++++++++++++++
+- Catatan: (Harap Di Baca)
+```
 harap perhatikan bagian OosAboutPreference.smali
 soalnya pemanggil text nya ke build.prop
 
@@ -69,5 +72,6 @@ ro.nad.build.type=OFFICIAL
 cocok kan dengan rom yg kalian pakai
 
 bisa juga kalian edit ke values/strings
+```
 
 sekian dan terima kasih
