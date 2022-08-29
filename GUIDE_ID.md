@@ -46,10 +46,6 @@ Recompile Settings_src dan decompile untuk urusan smali (taulah YGY kenapa seper
 lanjut 
 cocokan ID smali R$drawable.smali dan R$id.smali( yang baca pasti lebih pro)
 
-recompile
-sign
-push
-
 - Catatan: (Harap Di Baca)
 ```
 harap perhatikan bagian OosAboutPreference.smali
@@ -77,5 +73,10 @@ const-string v1, "maintainer"
 ```
 Lalu tambahkan nama pemanggil nya ke (values/strings)
 Pasti paham lah ya!!!
+
+recompile
+sign
+push
+Reboot
 
 sekian dan terima kasih
